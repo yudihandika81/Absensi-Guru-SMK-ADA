@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Absensi Guru SMK AlQuran dan Dakwah Alam</title>
+      <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+      <div class="container">
+            <h2>Form Absensi Guru SMK AlQuran dan Dakwah Alam</h2>
+            <form id="absensiForm">
+                  <label for="nama">Nama Lengkap*</label>
+                  <input type="text" id="nama" required><br>
+
+                  <label for="nip">NIP / NUPTK</label>
+                  <input type="text" id="nip"><br>
+
+                  <label for="tanggal">Tanggal Kehadiran*</label>
+                  <input type="date" id="tanggal" required><br>
+
+                  <label for="jam">Jam Kehadiran*</label>
+                  <input type="time" id="jam" required><br>
+
+                  <label for="status">Status Kehadiran*</label>
+                  <select id="status" required>
+                        <option value="" hidden>-- Pilih --</option>
+                        <option>Hadir</option>
+                        <option>Izin</option>
+                        <option>Sakit</option>
+                        <option>Dinas Luar</option>
+                  </select><br><br>
+
+                  <label for="keterangan">Keterangan</label>
+                  <textarea id="keterangan"></textarea><br><br>
+
+                  <button type="submit">Simpan Absensi</button>
+            </form>
+
+            <p style="margin-top:20px; text-align: center;">
+                  Masuk ke <a href="admin.html">Halaman Admin</a>
+            </p>
+      </div>
+      <script src="script.js"></script>
+</body>
+
+</html>
