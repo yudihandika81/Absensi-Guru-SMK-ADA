@@ -37,6 +37,30 @@
                   </table>
             </div>
       </div>
+      <!-- Firebase v9 compat (agar bisa pakai sintaks lama firebase.database) -->
+      <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
+
+      <script>
+            // 🔑 ganti dengan konfigurasi project kamu
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+                  apiKey: "AIzaSyARUT4aOfQdbsRUgTtl0gdr--tU473ZFq8",
+                  authDomain: "absensi-guru-smk-ada.firebaseapp.com",
+                  databaseURL: "https://absensi-guru-smk-ada-default-rtdb.asia-southeast1.firebasedatabase.app",
+                  projectId: "absensi-guru-smk-ada",
+                  storageBucket: "absensi-guru-smk-ada.firebasestorage.app",
+                  messagingSenderId: "705505081861",
+                  appId: "1:705505081861:web:8af086655f6dd3ca89ba6c",
+                  measurementId: "G-00765K14MF"
+            };
+
+            // Inisialisasi Firebase
+            firebase.initializeApp(firebaseConfig);
+      </script>
+
+      <!-- baru panggil script.js -->
+      <script src="script.js"></script>
 
       <script src="script.js"></script>
 </body>
